@@ -6,8 +6,30 @@
     <meta name="keywords" content="html tutorial template" />
   </head>   
   <body>
-    <button id="my-button">My button</button>
-    <div></div>
-    <script src="./script.js"></script>
+
+    <button id="my-button">BUTTON</button>
+    <div id="my-div"></div>
+
+    <ul>
+      <li class="list-items">Item 1</li>
+      <li class="list-items">Item 2</li>
+      <li class="list-items">Item 3</li>
+    </ul>
+
+    <script>
+      const myButton = document.getElementById('my-button')
+      const myDiv = document.getElementById('my-div')
+      const listItems = document.getElementsByClassName('list-items')
+
+      myButton.addEventListener('mouseenter', function () {
+        myDiv.style.color = 'red'
+        myDiv.innerHTML = 'Entered'
+      })
+
+      myButton.addEventListener('mouseleave', function () {
+        myDiv.innerHTML = 'Left'
+      })
+    
+    </script>
   </body>
 </html>
