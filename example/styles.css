@@ -1,0 +1,79 @@
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+	padding: 4px 18px;
+	background-color: white;
+	max-height: 0;
+	overflow-y: scroll;
+	transition: max-height 0.2s ease-out;
+}
+
+img {
+	width: 200px;
+	height: auto;
+}
+
+#image-container {
+	background-image: url('dog.jpg');
+	padding: 55px;
+	background-size: 300px 200px;
+	background-repeat: no-repeat;
+
+	color: white
+}
+
+#my-table {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+tr {
+	border: 1px solid black;
+}
+
+td {
+	min-width: 250px;
+	text-align: center;
+}
+
+.input-container {
+	font-family: 'Lucida Sans', sans-serif;
+	margin: 8px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.input-container > input {
+	font-size: 16px;
+}
+
+#login-button {
+	border-radius: 0;
+	background-color: #0F1214;
+	color: white;
+	padding: 7px 12px;
+}
+
+#login-button:hover {
+	background-color: gray;
+	color: #000;
+}

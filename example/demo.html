@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <!--
+        To open this page on the live server you need to specify the exact path.
+        For example: localhost:{port}/example/demo.html
+    -->
+  <body>
+    <button class="accordion">Text Examples</button>
+    <div class="panel">
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+
+      <p>
+        This is a paragraph: <br />
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. &#128509;
+      </p>
+
+      <code> codeTag(); </code>
+    </div>
+
+    <button class="accordion">Images</button>
+    <div class="panel">
+      <p>Using <code>&lt;img&gt; tag</code></p>
+      <img src="dog.jpg" alt="dog" />
+
+      <p>Using <code>&lt;div&gt; tag with background</code></p>
+      <div id="image-container">
+        <p>Overlaying text</p>
+      </div>
+    </div>
+
+    <button class="accordion">Lists</button>
+    <div class="panel">
+      <h4>Unordered List:</h4>
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ul>
+
+      <hr />
+
+      <h4>Ordered List:</h4>
+      <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ol>
+    </div>
+
+    <button class="accordion">Data Table</button>
+    <div class="panel">
+      <table id="my-table">
+        <tr>
+          <th>First Column</th>
+          <th>Second Column</th>
+          <th>Third Column</th>
+        </tr>
+        <tr>
+          <td>0,0</td>
+          <td>0,1</td>
+          <td>0,2</td>
+        </tr>
+        <tr>
+          <td>1,0</td>
+          <td>1,1</td>
+          <td>1,2</td>
+        </tr>
+      </table>
+    </div>
+    <button class="accordion">Links</button>
+    <div class="panel">
+      <a href="another-page.html">Go to another page</a> <br />
+      <a href="../index.html">Go to a page in another folder</a> <br />
+      <a href="https://www.w3schools.com/tags/default.asp" target="_blank"
+        >Open external website (W3S)</a
+      >
+    </div>
+
+    <button class="accordion">Form</button>
+    <div class="panel">
+      <form>
+        <div class="input-container">
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+        </div>
+        <button type="submit" id="login-button">Login</button>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
